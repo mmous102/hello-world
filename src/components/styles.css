@@ -1,0 +1,20 @@
+.App {
+    font-family: sans-serif;
+    padding-left: 50px;
+    padding-right: 50px;
+   display:flexbox;
+   padding-top: 20px;
+   font-size: 25px;
+  }
+  .App h1 {
+    text-align: center;
+  }
+  .App h2 {
+    text-align: center;
+  }
+  .App{
+      background-image:"url('./images/img-11.jpeg');"
+  }
+
+
+
