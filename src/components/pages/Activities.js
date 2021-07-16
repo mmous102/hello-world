@@ -6,6 +6,7 @@ import Footer from '../Footer';
 
  function Activities() {
   return (
+    <div className='app2'>
     <div className='cards'>
       <h1>Check out our Camp Sites</h1>
 
@@ -104,6 +105,7 @@ import Footer from '../Footer';
               path='/services'
             />
             </ul>
+      </div>
       </div>
       <Footer/>
     </div>
