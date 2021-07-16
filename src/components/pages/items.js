@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function CardItem(props) {
+function items(props) {
   return (
     <>
       <li className='cards__item'>
         <Link className='cards__item__link' to={props.path}>
-          <figure className='cards__item__pic-wrap' data-category={props.label} >
+          <figure className='cards__item__pic-wrap' data-category={props.label}>
             <img
               className='cards__item__img'
               alt='Travel Image'
@@ -22,4 +22,4 @@ function CardItem(props) {
   );
 }
 
-export default CardItem;
+export default items;
