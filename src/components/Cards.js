@@ -50,7 +50,7 @@ function Cards() {
               src='images/img-8.jpeg'
               text='Mountain Biking'
              // label='Workout'
-              path='/sign-up'
+              path='/Register'
             />
           </ul>
 

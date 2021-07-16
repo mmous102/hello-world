@@ -3,7 +3,7 @@ import './registerform.css';
 
 
 
-export default class SignUp extends Component {
+export default class signup extends Component {
     render() {
         return (
             <form>

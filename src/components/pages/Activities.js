@@ -52,7 +52,7 @@ import Footer from '../Footer';
               src='images/img-8.jpeg'
               text='Mountain Biking'
              // label='Workout'
-              path='/sign-up'
+              path='/products'
             />
 
           </ul>
