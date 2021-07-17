@@ -35,6 +35,8 @@ body, html, .App, #root, .outer {
   background-color: white;
   padding-top: 30px;
   padding-bottom: 50px;
+  background-image: url('/images/backg.jpg');
+  background-size: 114%;
 
 }
   
@@ -82,12 +84,18 @@ body, html, .App, #root, .outer {
 
 
 .btn{
-  font-size: 21px;
+  font-size: 18px;
   padding: 5px 20px;
-  border: 0;
-  background-color: #3498db;
-  color: #fff;
-  border-radius: 3px;
+  height: 45px;
+  background-color: black;
+  color: white;
+  border:1px solid white;
+  border-radius: 4px;
   transition: all 250ms ease-in-out;
   cursor: pointer;
+}
+
+.btn:hover{
+  background-color: black;
+  color: white;
 }

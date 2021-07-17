@@ -29,7 +29,7 @@ function Navbar(props) {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            Curiosity Camp
+            Championes Camp
             <i class='fab fa-typo3' />
           </Link>
 
@@ -43,8 +43,9 @@ function Navbar(props) {
             value={props.language}
             onChange={e => props.handleSetLanguage(e.target.value)}
           >
-            <option value="English">English</option>
-            <option value="French">French</option>
+          <option value="language"> Language</option>
+            <option value="English">En</option>
+            <option value="French">Fr</option>
           </select>
           
             <li className='nav-item'>
@@ -77,12 +78,12 @@ function Navbar(props) {
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                signup
+                Register
               </Link>
             </li>
           
           </ul>
-          {button && <Button buttonStyle='btn--outline'>sign-up</Button>}
+          {button && <Button class='bouton'>Register</Button>}
           <li className='nav-item-help'>
               <Link
                 to='/help'
@@ -90,6 +91,7 @@ function Navbar(props) {
                 onClick={closeMobileMenu}
               >
                 <i class="fas fa-info-circle"></i>
+
               </Link>
             </li>
         </div>
