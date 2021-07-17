@@ -2,6 +2,7 @@ import './index.css';
 import React, { Component } from "react";
 import Footer from '../Footer';
 
+
 export default class signup extends React.Component {
     
     render() {

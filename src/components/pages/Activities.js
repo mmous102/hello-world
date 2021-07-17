@@ -4,43 +4,63 @@ import './Activities.css';
 import CardItem from './items';
 import Footer from '../Footer';
 
- function Activities() {
+ function Activities(props) {
+  let content = {
+    English: {
+      title: "Our Activities",
+      camp: "Descover our outdoor camp sites",
+      img1: "Explore the forest",
+      img2: "Explore the sea",
+      img3: "Explore the sky",
+      Description: "Teach kids how to start a fire from scratch with the monitors supervision",
+    },
+    French: {
+      title: "Nos activités",
+      camp: "Decouvrez nos camps exterieurs",
+      img1: "Decouvrez les forets",
+      img2: "Decouvrez l'eau",
+      img3: "Explorer le plein-air",
+      Description: "Enseigner les enfants comment commencer le feu",
+    }
+  };
+
+  props.language === "French"
+    ? (content = content.French)
+    : (content = content.English);
+
   return (
     <div className='app2'>
     <div className='cards'>
-      <h1>Check out our Camp Sites</h1>
+      <h1>{content.camp}</h1>
 
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
               src='images/forest.jpeg'
-              text='Explore the land'
-              label='Forest'
+              text={content.img1}
               path='/services'
             />
             <CardItem
               src='images/sea.jpeg'
-              text='Explore the sea'
-             label='Sea'
+              text={content.img2}
               path='/services'
             />
 
             <CardItem
               src='images/mountain.jpeg'
-              text='Explore the sky'
-             label='Sky'
+              text={content.img3}
               path='/services'
             />
           </ul>
           </div>
-          <h1>Our Activities</h1>
+          <h1>{content.title}</h1>
         <div className='cards__wrapper'>
 
           <ul className='cards__items'>
             <CardItem
               src='images/img-3.jpeg'
               text='Campfire Building'
-             label='Description: Teach kids how to start a fire from scratch with the monitors supervision'
+             label= {content.Description}
               path='/services'
             />
             <CardItem
