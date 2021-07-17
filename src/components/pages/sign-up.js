@@ -1,14 +1,16 @@
+import './index.css';
 import React, { Component } from "react";
-import './registerform.css';
+import Footer from '../Footer';
 
-
-
-export default class signup extends Component {
+export default class signup extends React.Component {
+    
     render() {
         return (
-            <form>
-                <h3>Register</h3>
-
+            <div className="top">
+            <div className="base-container">
+                <div className="header"> Register </div>
+                <div className="content">
+                <div className="form">
                 <div className="form-group">
                     <label>First name</label>
                     <input type="text" className="form-control" placeholder="First name" />
@@ -28,12 +30,15 @@ export default class signup extends Component {
                     <label>Password</label>
                     <input type="password" className="form-control" placeholder="Enter password" />
                 </div>
+                <br/>
 
-                <button type="submit" className="btn btn-dark btn-lg btn-block">Register</button>
-                {/* <p className="forgot-password text-right">
-                    Already registered <a href="#">log in?</a>
-                </p> */}
-            </form>
+                <button type="submit" className="btn ">Register</button>
+                
+            </div>
+            </div>
+            </div>
+            <Footer/>
+            </div>
         );
     }
 }

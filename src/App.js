@@ -6,6 +6,10 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Evaluate from './components/pages/Evaluate';
 import Activities from './components/pages/Activities';
 import signup from './components/pages/sign-up';
+<<<<<<< HEAD
+=======
+
+>>>>>>> d6b5ebd2 (register)
 
 import SurveyComponent from './components/pages/Evaluate' 
 
