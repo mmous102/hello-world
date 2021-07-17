@@ -3,7 +3,7 @@ import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-function Navbar() {
+function Navbar(props) {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -32,10 +32,21 @@ function Navbar() {
             Curiosity Camp
             <i class='fab fa-typo3' />
           </Link>
+
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
+
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <select
+            className="custom-select"
+            value={props.language}
+            onChange={e => props.handleSetLanguage(e.target.value)}
+          >
+            <option value="English">English</option>
+            <option value="French">French</option>
+          </select>
+          
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                 Home
@@ -69,6 +80,7 @@ function Navbar() {
                 signup
               </Link>
             </li>
+          
           </ul>
           {button && <Button buttonStyle='btn--outline'>sign-up</Button>}
         </div>
