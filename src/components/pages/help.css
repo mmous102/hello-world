@@ -1,0 +1,29 @@
+
+.title {
+    margin-top: 20px;
+    text-align: center; 
+    /* //background-image:url("../../../public/images/") ; */
+} 
+
+.page{
+    background-color: rgb(218, 238, 245);
+    margin-top: 20px;
+}
+.contenthelp{
+    font-family: sans-serif;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 50px;
+    background-color: white;
+    padding-left: 80px;
+    padding-right: 80px;
+   display:flexbox;
+   padding-top: 20px;
+   font-size: 25px;
+   padding-bottom: 20px;
+   border-radius: 8px;
+}
+/* .contenthelp h3{
+    color: white;
+    background-color: lightblue;
+} */

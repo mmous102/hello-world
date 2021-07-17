@@ -83,6 +83,15 @@ function Navbar(props) {
           
           </ul>
           {button && <Button buttonStyle='btn--outline'>sign-up</Button>}
+          <li className='nav-item-help'>
+              <Link
+                to='/help'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                <i class="fas fa-info-circle"></i>
+              </Link>
+            </li>
         </div>
       </nav>
     </>

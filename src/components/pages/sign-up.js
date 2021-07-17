@@ -1,10 +1,31 @@
 import './index.css';
 import React, { Component } from "react";
 import Footer from '../Footer';
+import DatePicker from 'react-datepicker'
+import 'react-datepicker/dist/react-datepicker.css'
+import { date } from 'assert-plus';
 
 export default class signup extends React.Component {
+    constructor (props) {
+        super(props)
+        this.state = {
+          startDate: new Date()
+        };
+        this.handleChange = this.handleChange.bind(this);
+        this.onFormSubmit = this.onFormSubmit.bind(this);
+      }
     
+    handleChange(date) {
+        this.setState({
+          startDate: date
+        })
+      }
+      onFormSubmit(e) {
+        e.preventDefault();
+        console.log(this.state.startDate)
+      }
     render() {
+        // const [selectedDate, setSelectedDate] = useState(null)
         return (
             <div className="top">
             <div className="base-container">
@@ -26,12 +47,35 @@ export default class signup extends React.Component {
                     <input type="email" className="form-control" placeholder="Enter email" />
                 </div>
 
+                 <div className="form-group">
+                 <label for="activities">Choose an Activity:</label>
+                    <select name="activities" id="activities" className="form-control">
+                    <option value="activity1" className="form-control">Pick one for me!</option>
+                        <option value="activity1" className="form-control">activity1</option>
+                        <option value="activity2" className="form-control">activity2</option>
+                        <option value="activity3" className="form-control">activity3</option>
+                        <option value="actvity4" className="form-control">activity4</option>
+                    </select>     
+                </div> 
+                <form onSubmit={this.onFormSubmit}>
                 <div className="form-group">
-                    <label>Password</label>
-                    <input type="password" className="form-control" placeholder="Enter password" />
-                </div>
-                <br/>
+                    <label>Pick a time</label>
+                    <DatePicker className="form-control"
+                        selected={this.state.startDate}
+                        onChange = {this.handleChange}
+                        name="startDate"
+                        minDate={new Date()}
+                        placeholderText="Enter Date"
+                        dateformat="dd/MM/yyyy"
+                        filterDate={ startDate => startDate.getDay() != 6 & startDate.getDate() != 0}
+                        isClearable
+                        showYearDropdown
+                        scrollableMonthYearDropdown
+                    />
+                </div> 
+                </form>
 
+                <br/>
                 <button type="submit" className="btn ">Register</button>
                 
             </div>

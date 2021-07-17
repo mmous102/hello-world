@@ -48,6 +48,13 @@
 .nav-item {
   height: 80px;
 }
+.nav-item-help{
+  padding-left: 30px;
+  margin-bottom: 30px;
+  margin-left: 5px;
+  text-align: left;
+
+}
 
 .nav-links {
   color: #fff;
@@ -73,6 +80,11 @@
 
 .menu-icon {
   display: none;
+}
+.custom-select{
+  margin-top: 25px;
+  margin-left: 5px;
+
 }
 
 @media screen and (max-width: 960px) {
@@ -155,4 +167,5 @@
     color: #242424;
     transition: 250ms;
   }
+
 }

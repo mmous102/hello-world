@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Evaluate from './components/pages/Evaluate';
 import Activities from './components/pages/Activities';
 import signup from './components/pages/sign-up';
+import help from './components/pages/help';
 import  { useState } from "react";
 import SurveyComponent from './components/pages/Evaluate' 
 
@@ -33,6 +34,7 @@ function App() {
           <Activities language={language}/>
           </Route>
           <Route exact path='/sign-up' component={signup} />
+          <Route exact path='/help' component={help} />
         </Switch>
 
 
