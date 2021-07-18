@@ -50,11 +50,11 @@ export default class signup extends React.Component {
                  <div className="form-group">
                  <label for="activities">Choose an Activity:</label>
                     <select name="activities" id="activities" className="form-control">
-                    <option value="activity1" className="form-control">Pick one for me!</option>
-                        <option value="activity1" className="form-control">activity1</option>
-                        <option value="activity2" className="form-control">activity2</option>
-                        <option value="activity3" className="form-control">activity3</option>
-                        <option value="actvity4" className="form-control">activity4</option>
+                    <option value="activity1" className="form-control">Available Activities</option>
+                        <option value="activity1" className="form-control">Swimming</option>
+                        <option value="activity2" className="form-control">Archery</option>
+                        <option value="activity3" className="form-control">Camping</option>
+                        <option value="actvity4" className="form-control">Fire Building</option>
                     </select>     
                 </div> 
                 <form onSubmit={this.onFormSubmit}>

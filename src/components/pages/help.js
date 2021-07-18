@@ -20,7 +20,7 @@ function help() {
         <p> This is our landing page. It can be reached both by cliking on "Home" 
         navigation button or by clicking on our logo at the top-left of every page.
         On this page you will find our slogan displayed on our animated image. 
-        You will also find our past advantures and a preview of some activities offered by our camp.</p>
+        You will also find our past adventures and a preview of some activities offered by our camp.</p>
  
         <p>Please contact us if you have furthur questions.</p>
       </div>

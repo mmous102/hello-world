@@ -35,7 +35,7 @@ class SurveyComponent extends React.Component {
             "Team Work",
             "Responsable",
             "Leadership",
-            "Dicsision making",
+            "Decision making",
             "Strategic thinking ",
             "Patience",
             "Collaboration",
@@ -54,17 +54,13 @@ class SurveyComponent extends React.Component {
           colCount: 4,
           choicesOrder: "asc",
           choices: [
-            "Reading",
+            "Running",
             "Building",
             "Writing",
             "Learning",
-            "Science",
-            "Sport Science",
-            "Space",
-            "Drawing",
-            "Electronics",
-            "Mathematics",
-            "Astronomy"
+            "Socialising",
+            "Weightlifting",
+            
           ]
         },{
           type: "matrix",
@@ -206,7 +202,6 @@ class SurveyComponent extends React.Component {
           colCount: 4,
           choicesOrder: "asc",
           choices: [
-            "6 to 8 years old",
             "8 to 10 years old",
             "10 to 12 year old",
             "12 to 14 year old",
@@ -224,7 +219,7 @@ class SurveyComponent extends React.Component {
       />
     ) : null;
     var onCompleteComponent = this.state.isCompleted ? (
-      <div> <p style={{textAlign: "center"}}>According to your answers we think one activity you deffinitly must try is <em style={{color: 'white'}}>VOLCANO CONSTRUCTION!</em> <br/> However, to get more info about our activities and the updated list send to you, don't forget to sign up to our newsletter!</p></div>
+      <div> <p style={{textAlign: "center"}}>According to your answers we think one activity you definitly must try is <em style={{color: 'white'}}>SKY Camp!</em> <br/> However, to get more info about our activities and the updated list send to you, don't forget to sign up to our newsletter!</p></div>
     ) : null;
     return (
       <div className="survey">
@@ -241,8 +236,8 @@ function Evaluate() {
   return (
     <div className="App">
     <div className="Survey" >
-      <h1>Stem Camp Survey</h1>
-      <h2>This Survey will help you determine which STEM activity you would prefer the most!</h2>
+      <h1>Outdoor Camp Survey</h1>
+      <h2>This Survey will help you determine which outdoor activity you would prefer the most!</h2>
       <br/>
       <SurveyComponent />
       <br/>

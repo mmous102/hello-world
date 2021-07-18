@@ -8,7 +8,7 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join the Curiosity Camp newsletter to receive latest updates
+          Join the Championes Camp newsletter to receive latest updates
         </p>
         <div className='input-areas'>
           <form>
@@ -21,8 +21,8 @@ function Footer() {
             <Button buttonStyle='btn--outline'>Subscribe</Button>
           </form>
 
-          <h5 style={{paddingTop:"20px"}}>Contact us at (613)-292-4565</h5>
-          <h5>or by email at curiositycamp@gmail.com</h5>
+          <h5 style={{paddingTop:"20px"}}>Contact us at (666)-200-4567</h5>
+          <h5>or by email at championescamp@outlook.com</h5>
         </div>
       </section>
       

@@ -4,6 +4,26 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar(props) {
+  let content = {
+    English: {
+      home: "Home",
+      evaluate: "Evaluate",
+      activities: "Activities",
+      register: "Register",
+      
+    },
+    French: {
+      home: "Acceuil",
+      evaluate: "Évaluer",
+      activities: "Activités",
+      register: "S'inscrire",
+      
+    }
+  };
+
+  props.language === "French"
+    ? (content = content.French)
+    : (content = content.English);
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -29,8 +49,9 @@ function Navbar(props) {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+          <i class='fa fa-campground' />
             Championes Camp
-            <i class='fab fa-typo3' />
+            
           </Link>
 
           <div className='menu-icon' onClick={handleClick}>
@@ -50,7 +71,7 @@ function Navbar(props) {
           
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                Home
+                {content.home}
               </Link>
             </li>
             <li className='nav-item'>
@@ -59,7 +80,7 @@ function Navbar(props) {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Evaluate
+                {content.evaluate}
               </Link>
             </li>
             <li className='nav-item'>
@@ -68,7 +89,7 @@ function Navbar(props) {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Activities
+                {content.activities}
               </Link>
             </li>
 
@@ -79,11 +100,12 @@ function Navbar(props) {
                 onClick={closeMobileMenu}
               >
                 Register
+
               </Link>
             </li>
           
           </ul>
-          {button && <Button class='bouton'>Register</Button>}
+          {button && <Button class='bouton'>{content.register}</Button>}
           <li className='nav-item-help'>
               <Link
                 to='/help'

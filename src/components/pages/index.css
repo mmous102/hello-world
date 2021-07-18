@@ -48,6 +48,7 @@ body, html, .App, #root, .outer {
 .form-control{
   padding: 10px;
   margin: 10px;
+  height: 40px;
 }
 .form{
   margin-top: 2em;
@@ -80,6 +81,7 @@ body, html, .App, #root, .outer {
     margin-bottom: 31px;
     transition: all 250ms ease-in-out;
 
+
     }
 
 
@@ -96,6 +98,6 @@ body, html, .App, #root, .outer {
 }
 
 .btn:hover{
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
